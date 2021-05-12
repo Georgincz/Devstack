@@ -1,0 +1,29 @@
+{
+  "name": "devstack",
+  "version": "1.0.0",
+  "description": "jgl devstack",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.14",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-sass": "^4.1.0",
+    "gulp-uglify": "^3.0.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jgl",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Georgincz/devstack.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Georgincz/devstack/issues"
+  },
+  "homepage": "https://github.com/Georgincz/devstack#readme"
+}
