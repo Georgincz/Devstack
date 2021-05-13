@@ -30,10 +30,11 @@ gulp.task('browserSync', function() {
 );
 
 gulp.task('images', function() {
-    return gulp.src('./images/**/*.+(png|jpg|gif|svg)')
+    return gulp.src('./img/*')
     .pipe(imagemin())
-    .pipe(gulp.dest('./images'))
+    .pipe(gulp.dest('./img'))
 });
+
 
 gulp.task('uglify', function () {
     return gulp.src('./js/*.js')
