@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "jgl devstack",
   "main": "index.js",
-  "dependencies": {},
+  "dependencies": {
+    "gulp-rename": "^2.0.0"
+  },
   "devDependencies": {
     "browser-sync": "^2.26.14",
     "gulp": "^4.0.2",

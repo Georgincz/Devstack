@@ -1,0 +1,18 @@
+$colorPrimary: #ff9900; 
+
+h1 {
+  color: $colorPrimary;
+  font-size: 45px;
+}
+
+p {
+  font-size: 14px;
+}
+
+.testing {
+  width: percentage(5/7);
+}
+
+#obrazek {
+  width: 800px;
+}
