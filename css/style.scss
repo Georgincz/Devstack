@@ -1,12 +1,14 @@
 $colorPrimary: #ff9900; 
+$colorSecundary: #04bb0d;
 
 h1 {
-  color: $colorPrimary;
   font-size: 45px;
+  color: $colorPrimary;
 }
 
 p {
-  font-size: 14px;
+  font-size: 16px;
+  color: $colorSecundary;
 }
 
 .testing {

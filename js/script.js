@@ -1,1 +1,1 @@
-document.querySelector ('.nadpis').textContent = 'Nadpis H1 změněný Javascriptem test3';
+document.querySelector ('.nadpis').textContent = 'Nadpis H1 změněný Javascriptem test6';
