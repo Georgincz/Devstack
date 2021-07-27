@@ -33,23 +33,112 @@
 
 // @include font-face($font-family, $font-folder, $font-file, $font-weight, $font-style);
 
+
 $colorPrimary: #ff9900; 
 $colorSecundary: #04bb0d;
 
+body {
+  width: 92%;
+  margin: 0 auto;
+}
+
 h1 {
+  font-family: 'Allura', cursive;
   font-size: 45px;
   color: $colorPrimary;
 }
 
 p {
+  font-family: 'PT Sans', sans-serif;
   font-size: 16px;
   color: $colorSecundary;
+}
+
+@font-face {
+  font-family: 'Marcellus';
+  src: url('/fonts/Marcellus-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Marcellus';
+  src: url('/fonts/marcellix-regular-webfont.ttf');
+  unicode-range: U+0218-021B;
+}
+
+div {
+  font-size: 4em;
+  font-family: 'Marcellus';
 }
 
 .testing {
   width: percentage(5/7);
 }
 
-#obrazek {
-  width: 800px;
+.full-width {
+  width: 100%; 
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
+
+.img-box {
+  position: relative;
+  overflow: hidden;
+  width: 400px;
+  height: 400px;
+  margin: 10px;
+  border: solid 1px #cecece;
+}
+
+.object-fit {
+  object-fit: contain;
+}
+
+/* picture img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  &.landscape {
+    height: 100%;
+    width: auto;
+  }
+  &.portrait {
+    height: auto;
+    width: 100%;
+  }
+}
+
+@supports (object-fit: cover) {
+  picture img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  }
+}
+
+.no-objectfit { 
+  background-image: url(../img/selma.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 100%;
+  height: 100%;
+}
+.objectfit { 
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+ } */
+
+ @supports (object-fit: cover) {
+  picture img {
+  object-fit: cover;
+  }
+}
+
+ picture img {
+  width: 100%;
+  height: 100%;
+ }
