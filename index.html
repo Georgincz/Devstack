@@ -10,7 +10,8 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="/css/style.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style-google-fonts.css" type="text/css"/>
+        <link rel="stylesheet" href="css/style.css" type="text/css"/>
     </head>
     <body>
         <!--[if lt IE 7]>
@@ -18,8 +19,62 @@
         <![endif]-->
         <h1 class="nadpis">Nadpis H1</h1>
         <p>Textový blok. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate et nulla vitae egestas. Mauris sit amet tortor dignissim, consectetur lorem quis, posuere eros. Nam congue urna in dignissim mattis. Aenean porta pulvinar lectus, sed euismod leo dapibus nec. Fusce quis risus tellus. Vestibulum magna nibh, lacinia vitae lectus vulputate, congue finibus nibh. Morbi lacus felis, finibus ac erat ac, tincidunt posuere sem. Nulla ut rutrum nibh, eget volutpat nibh. Integer lacinia lacinia dolor. Aliquam in metus sit amet nibh fringilla sollicitudin.</p>
-        <img src="img/watercolor.jpg" alt="Watercolor" id="obrazek">
+        <div>Font ȘșȚț@ Marcellus</div>
+        <div>ȘșȚț</div>
+        <div>@</div>
+        <!-- <div class="img-box">
+            <picture>
+                <source type="image/webp" srcset="img/sup.webp">
+                <source type="image/jpg" srcset="img/sup.jpg">
+                <img class="landscape objectfit" src="img/sup.jpg" alt="sup">
+            </picture>
+        </div>
+        <div class="img-box">
+            <picture>
+                <source type="image/webp" srcset="img/selma.webp">
+                <source type="image/jpg" srcset="img/selma.jpg">
+                <img class="portrait objectfit" src="img/selma.jpg" alt="selma">
+            </picture>
+        </div>
+        <div class="img-box">
+            <picture>
+                <source type="image/webp" srcset="img/sup.webp">
+                <source type="image/jpg" srcset="img/sup.jpg">
+                <img class="no-objectfit" alt="sup">
+            </picture>
+        </div>
+        <div class="img-box">
+            <div class="no-objectfit"></div>
+        </div> -->
 
-        <script src="/js/script.js"></script>
+        <div class="full-width">
+			<div class="img-box">
+                <picture>
+                    <source class="webp-flip object-scale" type="image/webp" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.webp">
+                    <source class="jpg-flip" type="image/jpg" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
+                    <img class="webp-flip object-scale">
+                </picture>
+            </div>
+            <div class="img-box">
+                <picture>
+                    <source class="webp-flip object-scale" type="image/webp" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.webp">
+                    <source class="jpg-flip" type="image/jpg" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
+                    <img class="webp-flip object-scale">
+                </picture>
+            </div>
+            <div class="img-box">
+                <picture>
+                    <source class="webp-flip object-scale" type="image/webp" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.webp">
+                    <source class="jpg-flip" type="image/jpg" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
+                    <img class="webp-flip object-scale">
+                </picture>
+            </div>
+		</div>
+        <div class="full-width">
+            <button onclick="change()">Landscape/Portrait</button>
+            <button onclick="fit()">Cover/Contain</button>
+        </div>
+
+        <script type="text/javascript" src="js/script.js"></script>
     </body>
 </html>
