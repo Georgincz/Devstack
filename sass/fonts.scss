@@ -32,24 +32,3 @@
 // $font-style:		normal;
 
 // @include font-face($font-family, $font-folder, $font-file, $font-weight, $font-style);
-
-$colorPrimary: #ff9900; 
-$colorSecundary: #04bb0d;
-
-h1 {
-  font-size: 45px;
-  color: $colorPrimary;
-}
-
-p {
-  font-size: 16px;
-  color: $colorSecundary;
-}
-
-.testing {
-  width: percentage(5/7);
-}
-
-#obrazek {
-  width: 800px;
-}

@@ -1,17 +1,24 @@
 var gulp = require('gulp');
 var sass = require('gulp-sass');
-var cleanCSS = require('gulp-clean-css');
+var concat = require('gulp-concat');
 var browserSync = require('browser-sync').create();
 var imagemin = require('gulp-imagemin');
 var uglify = require('gulp-uglify');
 var rename = require("gulp-rename");
 var clean = require('gulp-clean');
+var cleanCSS = require('gulp-clean-css');
 
 sass.compiler = require('node-sass');
 
 gulp.task('clean', function () {
     return gulp.src(['./css/*.css', './js/*.min.js'], {read: false})
         .pipe(clean());
+});
+
+gulp.task('concat', function() {
+    return gulp.src('./sass/*.scss')
+      .pipe(concat('style.scss'))
+      .pipe(gulp.dest('./css'));
 });
 
 gulp.task('sass', function() {
@@ -51,4 +58,4 @@ gulp.task('watch', function() {
     gulp.watch('./css/**/*.scss', gulp.series('sass'));
 });
 
-gulp.task('default', gulp.series('clean', 'sass', 'minifyCss', 'images', 'uglify', 'browserSync'));
+gulp.task('default', gulp.series('clean', 'concat', 'sass', 'minifyCss', 'images', 'uglify', 'browserSync'));

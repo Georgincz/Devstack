@@ -1,0 +1,20 @@
+$colorPrimary: #ff9900; 
+$colorSecundary: #04bb0d;
+
+h1 {
+  font-size: 45px;
+  color: $colorPrimary;
+}
+
+p {
+  font-size: 16px;
+  color: $colorSecundary;
+}
+
+.testing {
+  width: percentage(5/7);
+}
+
+#obrazek {
+  width: 800px;
+}
