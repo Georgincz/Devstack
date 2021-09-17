@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -10,18 +10,31 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com/">
         <link rel="stylesheet" href="css/style-google-fonts.css" type="text/css"/>
         <link rel="stylesheet" href="css/style.css" type="text/css"/>
+        
     </head>
     <body>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        <h1 class="nadpis">Nadpis H1</h1>
+
+        <div class="wrapper">
+
+            <a href="../">Zpět</a>
+
+            <h1 class="nadpis">Nadpis H1</h1>
+
+        <!-- 
         <p>Textový blok. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vulputate et nulla vitae egestas. Mauris sit amet tortor dignissim, consectetur lorem quis, posuere eros. Nam congue urna in dignissim mattis. Aenean porta pulvinar lectus, sed euismod leo dapibus nec. Fusce quis risus tellus. Vestibulum magna nibh, lacinia vitae lectus vulputate, congue finibus nibh. Morbi lacus felis, finibus ac erat ac, tincidunt posuere sem. Nulla ut rutrum nibh, eget volutpat nibh. Integer lacinia lacinia dolor. Aliquam in metus sit amet nibh fringilla sollicitudin.</p>
-        <div>Font ȘșȚț@ Marcellus</div>
-        <div>ȘșȚț</div>
-        <div>@</div>
+        <div class="font">Font ȘșȚț@ Marcellus</div>
+        <div class="font">ȘșȚț</div>
+        <div class="font">@</div>
+        <a href="" class="btn btn-gradient">Try for Free</a>
+         -->
         <!-- <div class="img-box">
             <picture>
                 <source type="image/webp" srcset="img/sup.webp">
@@ -52,27 +65,28 @@
                 <picture>
                     <source class="webp-flip object-scale" type="image/webp" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.webp">
                     <source class="jpg-flip" type="image/jpg" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
-                    <img class="webp-flip object-scale">
+                    <img class="webp-flip object-scale" src="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
                 </picture>
             </div>
             <div class="img-box">
                 <picture>
                     <source class="webp-flip object-scale" type="image/webp" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.webp">
                     <source class="jpg-flip" type="image/jpg" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
-                    <img class="webp-flip object-scale">
+                    <img class="webp-flip object-scale" src="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
                 </picture>
             </div>
             <div class="img-box">
                 <picture>
                     <source class="webp-flip object-scale" type="image/webp" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.webp">
                     <source class="jpg-flip" type="image/jpg" srcset="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
-                    <img class="webp-flip object-scale">
+                    <img class="webp-flip object-scale" src="https://raw.githubusercontent.com/Georgincz/Devstack/main/img/car.jpg">
                 </picture>
             </div>
 		</div>
         <div class="full-width">
             <button onclick="change()">Landscape/Portrait</button>
             <button onclick="fit()">Cover/Contain</button>
+        </div>
         </div>
 
         <script type="text/javascript" src="js/script.js"></script>

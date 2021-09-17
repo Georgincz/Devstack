@@ -1,4 +1,4 @@
-document.querySelector ('.nadpis').textContent = 'Nadpis H1 změněný Javascriptem';
+document.querySelector ('.nadpis').textContent = 'Použití čtvercového formátu na vertikální a horizontální obrázky';
 
 // Prepinani obrazku
 

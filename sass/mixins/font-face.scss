@@ -8,7 +8,7 @@
 // ---------------------------------------------------------------------------------------------------------------------
 
 
-@mixin font-face($family, $folder, $file, $weight, $style, $font-unicode-range: false, $woff2: true, $settings: false) {
+@mixin font-face($family, $folder, $file, $weight, $style, $woff2: true) {
     @font-face {
       font-family: '#{$family}';
   
@@ -21,16 +21,16 @@
   
       font-weight: $weight;
       font-style: $style;
-      @if $font-unicode-range {
-        unicode-range: $font-unicode-range;
-      }
+      // @if $font-unicode-range {
+      //   unicode-range: $font-unicode-range;
+      // }
   
       font-rendering: swap 500ms;
       font-display: swap;
   
-      @if $settings {
-        @include font-feature-settings($settings);
-      }
+      // @if $settings {
+      //   @include font-feature-settings($settings);
+      // }
   
     }
   }
